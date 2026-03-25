@@ -8,9 +8,20 @@
 
   <!-- SEO -->
   <meta name="description" content="AI Engineer portfolio showcasing RAG systems, LLM apps, and AI solutions by Abhishek Agnihotri.">
-  <meta property="og:title" content="Abhishek Agnihotri | AI Engineer Portfolio">
-  <meta property="og:description" content="Explore AI projects, RAG systems, and ML solutions.">
-  <meta property="og:type" content="website">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Abhishek Agnihotri | AI Portfolio">
+  <meta property="og:description" content="Explore AI projects and intelligent systems.">
+
+  <!-- Google Analytics -->
+  <!-- 🔴 REPLACE G-XXXXXXX WITH YOUR ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,14 +31,14 @@
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- AOS Animation -->
+  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <!-- Fallback Styles -->
+  <!-- Styles -->
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #020617, #020617, #020617);
+      background: linear-gradient(135deg, #020617, #020617);
       color: white;
       margin: 0;
       opacity: 0;
@@ -44,136 +55,152 @@
       -webkit-background-clip:text;
       color: transparent;
     }
+
+    /* Chatbot UI */
+    #chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 320px;
+      max-height: 500px;
+      display: none;
+      flex-direction: column;
+      background: #0f172a;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    #chat-messages {
+      flex: 1;
+      padding: 10px;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+
+    .msg-user { text-align: right; margin: 5px; color: #38bdf8; }
+    .msg-bot { text-align: left; margin: 5px; color: #a78bfa; }
+
+    #chat-input {
+      display: flex;
+      border-top: 1px solid #334155;
+    }
+
+    #chat-input input {
+      flex: 1;
+      padding: 10px;
+      background: transparent;
+      border: none;
+      color: white;
+    }
+
+    #chat-input button {
+      padding: 10px;
+      background: #6366f1;
+    }
+
+    #chat-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #6366f1;
+      padding: 12px 16px;
+      border-radius: 50px;
+      cursor: pointer;
+    }
   </style>
 </head>
 
-<body class="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white">
+<body>
 
-  <!-- HERO -->
-  <section class="text-center py-32 px-6 relative overflow-hidden">
+<!-- HERO -->
+<section class="text-center py-32 px-6">
+  <h1 class="text-5xl md:text-7xl font-extrabold gradient-text">🚀 Abhishek Agnihotri</h1>
+  <p id="typing" class="mt-6 text-xl text-gray-300"></p>
+  <p class="text-gray-400 mt-4">🚀 Open to freelance AI & data projects</p>
+</section>
 
-    <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-green-400/10 blur-3xl"></div>
+<!-- PROJECTS -->
+<section class="py-20 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-12">🚀 Featured Projects</h2>
+  <p class="text-gray-400">Explore my GitHub for full projects</p>
+</section>
 
-    <div class="relative z-10" data-aos="fade-up">
-      <h1 class="text-5xl md:text-7xl font-extrabold gradient-text">
-        🚀 Abhishek Agnihotri
-      </h1>
+<!-- CTA -->
+<section class="text-center py-20">
+  <h2 class="text-4xl font-bold gradient-text">Let’s Build AI Together 🚀</h2>
+  <p class="text-gray-400 mt-4">Available for freelance AI projects</p>
+</section>
 
-      <p id="typing" class="mt-6 text-xl text-gray-300"></p>
+<!-- CHATBOT -->
+<div id="chatbot">
+  <div id="chat-messages"></div>
+  <div id="chat-input">
+    <input id="user-input" placeholder="Ask about my work..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
 
-      <p class="text-gray-400 mt-4">
-        🚀 Open to freelance AI & data projects
-      </p>
+<div id="chat-toggle" onclick="toggleChat()">💬</div>
 
-      <div class="mt-10 flex justify-center gap-4 flex-wrap">
-        <a href="mailto:agnihotriabhi19@gmail.com"
-           class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl hover:scale-105 hover:shadow-xl transition">
-           Hire Me
-        </a>
+<!-- FOOTER -->
+<footer class="text-center py-6 text-gray-500">
+  © 2026 Abhishek Agnihotri
+</footer>
 
-        <a href="https://www.linkedin.com/in/abhishekagnihotri19/"
-           target="_blank"
-           class="px-8 py-4 border border-gray-600 rounded-2xl hover:bg-gray-800 transition">
-           LinkedIn
-        </a>
-      </div>
-    </div>
-  </section>
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- TRUST -->
-  <p class="text-center text-gray-500 mt-6">
-    Trusted to build AI solutions • Real-world projects • Scalable systems
-  </p>
+<script>
+AOS.init();
 
-  <!-- WHAT I DO -->
-  <section class="max-w-5xl mx-auto px-6 py-16 text-center" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-6">💼 What I Do</h2>
-    <p class="text-gray-400 text-lg">
-      I help businesses automate workflows, enhance customer experience, and unlock insights using AI-powered systems like RAG, LLMs, and intelligent automation.
-    </p>
-  </section>
+// Typing effect
+const text = "AI Engineer | RAG Specialist | Building AI Systems";
+let i = 0;
+function typeEffect() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeEffect, 40);
+  }
+}
+window.onload = () => {
+  document.body.style.opacity = "1";
+  typeEffect();
+};
 
-  <!-- SERVICES -->
-  <section class="max-w-6xl mx-auto px-6 py-12">
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-xl transition" data-aos="fade-up">🤖 AI Chatbots</div>
-      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-xl transition" data-aos="fade-up">📄 Document AI</div>
-      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-xl transition" data-aos="fade-up">🛍️ Recommendation Systems</div>
-      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-xl transition" data-aos="fade-up">⚡ Workflow Automation</div>
-    </div>
-  </section>
+// Chatbot toggle
+function toggleChat() {
+  const bot = document.getElementById("chatbot");
+  bot.style.display = bot.style.display === "flex" ? "none" : "flex";
+}
 
-  <!-- PROJECTS -->
-  <section class="py-20 px-6">
-    <h2 class="text-3xl font-bold text-center mb-12">🚀 Featured Projects</h2>
+// Chatbot logic (demo AI)
+function sendMessage() {
+  const input = document.getElementById("user-input");
+  const msg = input.value;
+  if (!msg) return;
 
-    <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+  const chat = document.getElementById("chat-messages");
 
-      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-2xl transition" data-aos="zoom-in">
-        <h3 class="text-xl font-semibold">AI Customer Support</h3>
-        <p class="text-gray-400 mt-2">RAG chatbot</p>
-        <a href="https://github.com/abhishekagnihotri19/customer_support_system" target="_blank" class="text-blue-400 mt-4 inline-block">View →</a>
-      </div>
+  chat.innerHTML += `<div class="msg-user">${msg}</div>`;
 
-      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-2xl transition" data-aos="zoom-in">
-        <h3 class="text-xl font-semibold">Document Chat</h3>
-        <p class="text-gray-400 mt-2">Enterprise AI</p>
-        <a href="https://github.com/abhishekagnihotri19/Enterprise-Doc-Chat" target="_blank" class="text-blue-400 mt-4 inline-block">View →</a>
-      </div>
+  let reply = "Thanks for your message! I build AI solutions. Let's connect.";
 
-      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-2xl transition" data-aos="zoom-in">
-        <h3 class="text-xl font-semibold">Multi-LLM Bot</h3>
-        <p class="text-gray-400 mt-2">AI Chatbot</p>
-        <a href="https://github.com/abhishekagnihotri19/LangChain" target="_blank" class="text-blue-400 mt-4 inline-block">View →</a>
-      </div>
+  if (msg.toLowerCase().includes("project")) {
+    reply = "Check my GitHub projects above 🚀";
+  }
 
-    </div>
-  </section>
+  if (msg.toLowerCase().includes("hire")) {
+    reply = "Great! Email me at agnihotriabhi19@gmail.com 💼";
+  }
 
-  <!-- CTA -->
-  <section class="text-center py-20 px-6" data-aos="fade-up">
-    <h2 class="text-4xl font-bold gradient-text">
-      Let’s Build AI That Drives Results 🚀
-    </h2>
+  chat.innerHTML += `<div class="msg-bot">${reply}</div>`;
 
-    <p class="text-gray-400 mt-4">
-      🚀 Open to freelance AI & data projects • Let’s build something impactful
-    </p>
-
-    <div class="mt-6 flex justify-center gap-4 flex-wrap">
-      <a href="mailto:agnihotriabhi19@gmail.com"
-         class="px-6 py-3 bg-green-600 rounded-2xl hover:bg-green-500 transition">
-         Start a Project
-      </a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="text-center py-6 text-gray-500">
-    © 2026 Abhishek Agnihotri • Built with ❤️ & AI
-  </footer>
-
-  <!-- SCRIPTS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script>
-    AOS.init({ duration: 1000, once: true });
-
-    // Typing effect
-    const text = "AI Engineer | RAG & LLM Specialist | Building Intelligent Systems";
-    let i = 0;
-    function typeEffect() {
-      if (i < text.length) {
-        document.getElementById("typing").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typeEffect, 40);
-      }
-    }
-    window.onload = () => {
-      document.body.style.opacity = "1";
-      typeEffect();
-    };
-  </script>
+  input.value = "";
+  chat.scrollTop = chat.scrollHeight;
+}
+</script>
 
 </body>
 </html>
