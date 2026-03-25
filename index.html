@@ -1,163 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Abhishek Agnihotri | AI Engineer Portfolio</title>
+
+  <!-- SEO -->
   <meta name="description" content="AI Engineer portfolio showcasing RAG systems, LLM apps, and AI solutions by Abhishek Agnihotri.">
   <meta property="og:title" content="Abhishek Agnihotri | AI Engineer Portfolio">
   <meta property="og:description" content="Explore AI projects, RAG systems, and ML solutions.">
   <meta property="og:type" content="website">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abhishek Agnihotri | AI Engineer</title>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Fallback Styles -->
   <style>
-  
-  body {
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #020617, #020617, #020617);
-    color: white;
-  }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #020617, #020617, #020617);
+      color: white;
+      margin: 0;
+      opacity: 0;
+    }
 
-  .glass {
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255,255,255,0.1);
-  }
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
 
-  .gradient-text {
-    background: linear-gradient(90deg,#60a5fa,#a78bfa,#34d399);
-    -webkit-background-clip:text;
-    color: transparent;
-  }
-</style>
+    .gradient-text {
+      background: linear-gradient(90deg,#60a5fa,#a78bfa,#34d399);
+      -webkit-background-clip:text;
+      color: transparent;
+    }
+  </style>
 </head>
+
 <body class="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white">
 
-  <!-- Hero -->
- <section class="text-center py-32 px-6 relative overflow-hidden">
+  <!-- HERO -->
+  <section class="text-center py-32 px-6 relative overflow-hidden">
 
-  <!-- Background Glow -->
-  <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-green-400/10 blur-3xl"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-green-400/10 blur-3xl"></div>
 
-  <!-- Content -->
-  <div class="relative z-10">
-    <h1 class="text-5xl md:text-7xl font-extrabold gradient-text">
-      🚀 Abhishek Agnihotri
-    </h1>
+    <div class="relative z-10" data-aos="fade-up">
+      <h1 class="text-5xl md:text-7xl font-extrabold gradient-text">
+        🚀 Abhishek Agnihotri
+      </h1>
 
-    <p id="typing" class="mt-6 text-xl text-gray-300"></p>
+      <p id="typing" class="mt-6 text-xl text-gray-300"></p>
 
-    <p class="text-gray-400 mt-4">
-      🚀 Open to freelance AI & data projects
-    </p>
+      <p class="text-gray-400 mt-4">
+        🚀 Open to freelance AI & data projects
+      </p>
 
-    <div class="mt-10 flex justify-center gap-4 flex-wrap">
-      <a href="mailto:agnihotriabhi19@gmail.com"
-         class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl hover:scale-105 hover:shadow-xl transition">
-         Hire Me
-      </a>
+      <div class="mt-10 flex justify-center gap-4 flex-wrap">
+        <a href="mailto:agnihotriabhi19@gmail.com"
+           class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl hover:scale-105 hover:shadow-xl transition">
+           Hire Me
+        </a>
 
-      <a href="https://www.linkedin.com/in/abhishekagnihotri19/"
-         target="_blank"
-         class="px-8 py-4 border border-gray-600 rounded-2xl hover:bg-gray-800 transition">
-         LinkedIn
-      </a>
-    </div>
-  </div>
-</section>
-
-  <!-- Services -->
-  <section class="max-w-6xl mx-auto px-6 py-12">
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="glass p-6 rounded-2xl">🤖 AI Chatbots for Customer Support & Sales</div>
-      <div class="glass p-6 rounded-2xl">📄 Document AI (Chat with PDFs, SOPs)</div>
-      <div class="glass p-6 rounded-2xl">🛍️ Recommendation Systems</div>
-      <div class="glass p-6 rounded-2xl">⚡ Workflow Automation using LLMs</div>
+        <a href="https://www.linkedin.com/in/abhishekagnihotri19/"
+           target="_blank"
+           class="px-8 py-4 border border-gray-600 rounded-2xl hover:bg-gray-800 transition">
+           LinkedIn
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- TRUST -->
+  <p class="text-center text-gray-500 mt-6">
+    Trusted to build AI solutions • Real-world projects • Scalable systems
+  </p>
+
+  <!-- WHAT I DO -->
+  <section class="max-w-5xl mx-auto px-6 py-16 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6">💼 What I Do</h2>
+    <p class="text-gray-400 text-lg">
+      I help businesses automate workflows, enhance customer experience, and unlock insights using AI-powered systems like RAG, LLMs, and intelligent automation.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-xl transition" data-aos="fade-up">🤖 AI Chatbots</div>
+      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-xl transition" data-aos="fade-up">📄 Document AI</div>
+      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-xl transition" data-aos="fade-up">🛍️ Recommendation Systems</div>
+      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-xl transition" data-aos="fade-up">⚡ Workflow Automation</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
   <section class="py-20 px-6">
     <h2 class="text-3xl font-bold text-center mb-12">🚀 Featured Projects</h2>
 
     <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
 
-      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 transition duration-300">
-        <h3 class="text-xl font-semibold">AI Customer Support System</h3>
-        <p class="text-gray-400 mt-2">RAG-powered product recommendation chatbot</p>
-        <p class="text-sm mt-3 text-green-400">Impact: Improved customer decision speed</p>
-        <a href="https://github.com/abhishekagnihotri19/customer_support_system" target="_blank" class="text-blue-400 mt-4 inline-block">View Project →</a>
+      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-2xl transition" data-aos="zoom-in">
+        <h3 class="text-xl font-semibold">AI Customer Support</h3>
+        <p class="text-gray-400 mt-2">RAG chatbot</p>
+        <a href="https://github.com/abhishekagnihotri19/customer_support_system" target="_blank" class="text-blue-400 mt-4 inline-block">View →</a>
       </div>
 
-      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 transition duration-300">
-        <h3 class="text-xl font-semibold">Enterprise Document Chat</h3>
-        <p class="text-gray-400 mt-2">AI system to query enterprise documents</p>
-        <p class="text-sm mt-3 text-green-400">Impact: Reduced manual search time</p>
-        <a href="https://github.com/abhishekagnihotri19/Enterprise-Doc-Chat" target="_blank" class="text-blue-400 mt-4 inline-block">View Project →</a>
+      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-2xl transition" data-aos="zoom-in">
+        <h3 class="text-xl font-semibold">Document Chat</h3>
+        <p class="text-gray-400 mt-2">Enterprise AI</p>
+        <a href="https://github.com/abhishekagnihotri19/Enterprise-Doc-Chat" target="_blank" class="text-blue-400 mt-4 inline-block">View →</a>
       </div>
 
-      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 transition duration-300">
-        <h3 class="text-xl font-semibold">Multi-LLM Chatbot</h3>
-        <p class="text-gray-400 mt-2">Dynamic chatbot using OpenAI & Ollama</p>
-        <p class="text-sm mt-3 text-green-400">Impact: Enhanced response quality</p>
-        <a href="https://github.com/abhishekagnihotri19/LangChain" target="_blank" class="text-blue-400 mt-4 inline-block">View Project →</a>
+      <div class="glass p-6 rounded-2xl hover:scale-105 hover:shadow-2xl transition" data-aos="zoom-in">
+        <h3 class="text-xl font-semibold">Multi-LLM Bot</h3>
+        <p class="text-gray-400 mt-2">AI Chatbot</p>
+        <a href="https://github.com/abhishekagnihotri19/LangChain" target="_blank" class="text-blue-400 mt-4 inline-block">View →</a>
       </div>
 
-    </div>
-  </section>
-
-  <!-- Process -->
-  <section class="max-w-5xl mx-auto px-6 py-20 text-center">
-    <h2 class="text-3xl font-bold mb-8">🧠 How I Work</h2>
-    <div class="grid md:grid-cols-3 gap-6 text-gray-400">
-      <div class="glass p-6 rounded-2xl">1️⃣ Understand Business Problem</div>
-      <div class="glass p-6 rounded-2xl">2️⃣ Design AI Solution</div>
-      <div class="glass p-6 rounded-2xl">3️⃣ Build & Deploy Scalable System</div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="text-center py-20 px-6">
-   <h2 class="text-4xl font-bold gradient-text">
+  <section class="text-center py-20 px-6" data-aos="fade-up">
+    <h2 class="text-4xl font-bold gradient-text">
       Let’s Build AI That Drives Results 🚀
     </h2>
 
-  <p class="text-gray-400 mt-4">
-    I help businesses automate, scale, and innovate using AI systems.
-  </p>
+    <p class="text-gray-400 mt-4">
+      🚀 Open to freelance AI & data projects • Let’s build something impactful
+    </p>
 
     <div class="mt-6 flex justify-center gap-4 flex-wrap">
-      <a href="mailto:agnihotriabhi19@gmail.com" class="px-6 py-3 bg-green-600 rounded-2xl hover:bg-green-500 transition">Start a Project</a>
-      <a href="tel:+917828101007" class="px-6 py-3 border border-gray-600 rounded-2xl hover:bg-gray-800 transition">Call Me</a>
+      <a href="mailto:agnihotriabhi19@gmail.com"
+         class="px-6 py-3 bg-green-600 rounded-2xl hover:bg-green-500 transition">
+         Start a Project
+      </a>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="text-center py-6 text-gray-500">
     © 2026 Abhishek Agnihotri • Built with ❤️ & AI
   </footer>
-<script>
-const text = "AI Engineer | RAG & LLM Specialist | Building Intelligent Systems";
-let i = 0;
 
-function typeEffect() {
-  if (i < text.length) {
-    document.getElementById("typing").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typeEffect, 40);
-  }
-}
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-window.onload = typeEffect;
-</script>
-<script>
-AOS.init({
-  duration: 1000,
-  once: true
-});
-</script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // Typing effect
+    const text = "AI Engineer | RAG & LLM Specialist | Building Intelligent Systems";
+    let i = 0;
+    function typeEffect() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 40);
+      }
+    }
+    window.onload = () => {
+      document.body.style.opacity = "1";
+      typeEffect();
+    };
+  </script>
+
 </body>
 </html>
-
